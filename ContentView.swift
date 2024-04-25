@@ -6,8 +6,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                BankAccountView()
-                AchievementBarView(progress: $progress)
+                
             }
             .navigationBarTitle("Home",displayMode: .inline)
         }
