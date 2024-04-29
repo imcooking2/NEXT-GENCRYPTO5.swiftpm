@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import SwiftUI
+struct BankBalance: View {
+    
+    var body: some View {
+        VStack{
+            HStack{
+                Spacer()
+                Image("")// logo
+            }
+            Text("Balance")
+            Text("Value")
+        }
+    }
+}
+
+
