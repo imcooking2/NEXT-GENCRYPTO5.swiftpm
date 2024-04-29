@@ -10,13 +10,20 @@ import SwiftUI
 struct BankBalance: View {
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             HStack{
                 Spacer()
                 Image("")// logo
             }
             Text("Balance")
-            Text("Value")
+            HStack{
+                Text("USD")
+                Text("$AMOUNT")
+                
+            }
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(20)
         }
     }
 }

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MainHub: View {
-    @State var Crypto : [cryptoclass] = [cryptoclass(name: "Milk",Amount: 5), cryptoclass(name: "Cheese", Amount: 2)]
+    @State var Crypto : [currentCrypto] =   [currentCrypto, currentCrypto]
     
     var body: some View {
         
