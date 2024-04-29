@@ -5,6 +5,7 @@ struct ContentView: View {
     @State var balance: Double = 0.00
     var body: some View {
         NavigationView {
+<<<<<<< HEAD
                    VStack {
                        Text("Welcome to Our App")
                            .font(.largeTitle)
@@ -33,4 +34,13 @@ struct ContentView: View {
 
 
 
+=======
+            VStack {
+                
+            }
+            .navigationBarTitle("Home",displayMode: .inline)
+        }
+    }
+}
+>>>>>>> main
 
