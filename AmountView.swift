@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct currentCrypto:cryptoclass
+struct currentCrypto: cryptoclass
 
 
 HStack {
