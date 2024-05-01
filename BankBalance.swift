@@ -6,3 +6,26 @@
 //
 
 import Foundation
+import SwiftUI
+struct BankBalance: View {
+    
+    var body: some View {
+        VStack(alignment: .leading){
+            HStack{
+                Spacer()
+                Image("")// logo
+            }
+            Text("Balance")
+            HStack{
+                Text("USD")
+                Text("$AMOUNT")
+                
+            }
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(20)
+        }
+    }
+}
+
+

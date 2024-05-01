@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct MainHub: View {
-    @State var Crypto : [CryptoClass] = [CryptoClass(name: "Milk",Amount: 5), CryptoClass(name: "Cheese", Amount: 2)]
+    @State var Crypto : [currentCrypto] =   [currentCrypto, currentCrypto]
     
     var body: some View {
         
         StockMenu(Crypto: $Crypto)
-        List(CryptoCurrencies, id: \.self){ CryptoCurrencies in Text(CryptoCurrencies)
+        List(cryptocurrencies, id: \.self){ cryptocurrencies in Text(cryptocurrencies)
         }
     }
 }
