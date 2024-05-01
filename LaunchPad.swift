@@ -22,7 +22,13 @@ struct LaunchPad: View {
     var body: some View{
         ZStack{
             if showLoadingText{
-                HStack(spacing: 0 )
+                HStack(spacing: 0) {
+                    ForEach(loadingText.indices) {index in Text(loadingText[index])}
+                        .font(.headline)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.green)
+                        
+                }
             }
             
         }
