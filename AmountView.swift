@@ -7,14 +7,7 @@
 
 import SwiftUI
 
-struct currentCrypto: cryptoclass
 
-
-HStack {
-    Text("Amount:")
-    Text("\(currentcrypto.amount)")
-        .foregroundstyle(.red)
-         }
 
        
    

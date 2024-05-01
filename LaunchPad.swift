@@ -29,9 +29,14 @@ struct LaunchPad: View {
                         .foregroundColor(.green)
                         
                 }
+                
             }
-            
+                
+
+                            
         }
+        
+        .transition(AnyTransition.scale.animation(.easeIn))
         
     }
 }
