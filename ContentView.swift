@@ -6,14 +6,14 @@ struct ContentView: View {
     @State var animatedGradient = false
     var body: some View {
         NavigationView {
-<<<<<<< HEAD
+
                    VStack {
                        Text("Welcome to Our App")
                            .font(.largeTitle)
                            .fontWeight(.bold)
                            .padding()
                        
-                       NavigationLink(destination: AchievementBar()) {
+                       NavigationLink(destination: AchievementBarView(progress: $progress)) {
                            Text("Tutorial")
                            Text("Go to Detail View")
                                .font(.title2)
@@ -30,18 +30,20 @@ struct ContentView: View {
                
                    }
                    .navigationBarTitle("Home", displayMode: .inline)
+        
+        VStack {
+            
+        }
+        .navigationBarTitle("Home",displayMode: .inline)
                }
            }
 
 
 
-=======
-            VStack {
-                
-            }
-            .navigationBarTitle("Home",displayMode: .inline)
-        }
-    }
-}
->>>>>>> main
+
+           
+        
+    
+
+
 

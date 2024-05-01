@@ -19,4 +19,12 @@ struct MainCircleButton: View {
             .background(Circle()
                 .foregroundColor(Color.blue))
     }
+      
+}
+
+struct MainCircleButton_Previews: PreviewProvider{
+    static var previews: some View{
+        
+        MainCircleButton(iconName: "info")
+    }
 }
