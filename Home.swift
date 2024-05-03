@@ -16,9 +16,15 @@ struct Home: View{
                     .fill(.red)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50, height: 50)
+                
+                VStack(alignment: .leading, spacing: 5){
+                    Text("Bitcoin")
+                        .font(.callout)
+                }
             }
-            .frame(maxWidth: )
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .padding()
         .frame(width: .infinity, height: .infinity)
     }
 }
