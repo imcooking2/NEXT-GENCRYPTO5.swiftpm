@@ -11,6 +11,8 @@ struct ContentView: View {
     // @State private var selectedCoin: CoinModel? = nil
     @State private var showDetailView: Bool = false
     var body: some View {
+        
+    
         NavigationView {
             
             VStack {
