@@ -8,13 +8,4 @@
 
 import SwiftUI
 
-struct MainHub: View {
-    @State var Crypto : [currentCrypto] =   [currentCrypto, currentCrypto]
-    
-    var body: some View {
-        
-        StockMenu(Crypto: $Crypto)
-        List(cryptocurrencies, id: \.self){ cryptocurrencies in Text(cryptocurrencies)
-        }
-    }
-}
+

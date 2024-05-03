@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct currentCrypto: cryptoclass
-
-
-HStack {
-    Text("Amount:")
-    Text("\(currentcrypto.amount)")
-        .foregroundstyle(.red)
-         }
-
+struct AmountView: View{
+    
+    var body: some View{
+        
+        Text("Amount Here")
+            .bold()
+            .font(.title)
+            .padding(2)
+    }
+}
        
    
