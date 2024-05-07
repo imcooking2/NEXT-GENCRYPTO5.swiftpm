@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CalculationsPage: View {
     @State private var currentcalc = ""
     @State private var desiredcalc = ""
     @State private var CalcWeight = ""
@@ -27,3 +27,7 @@ struct ContentView: View {
                     .keyboardType(.decimalPad)
                     .padding()
                 
+            }
+        }
+    }
+}

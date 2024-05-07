@@ -18,3 +18,12 @@ struct CircleButtonAnimationView: View{
             .animation(animate ? Animation.easeOut(duration: 1.0) : .none)
     }
 }
+
+
+struct CircleButtonAnimationView_Previews: PreviewProvider{
+    static var previews: some View{
+        CircleButtonAnimationView(animate: .constant(false))
+            .foregroundColor(.red)
+            .frame(width: 100, height: 100)
+    }
+}
