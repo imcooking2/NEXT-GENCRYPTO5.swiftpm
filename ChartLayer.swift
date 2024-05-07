@@ -13,7 +13,7 @@ struct ChartLayer: View {
     let ydata = [100,200,300,400,500]
     
     var body: some View {
-     
+     Text("Hi")
        
         
     }
