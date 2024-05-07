@@ -11,28 +11,43 @@ struct ContentView: View {
     // @State private var selectedCoin: CoinModel? = nil
     @State private var showDetailView: Bool = false
     var body: some View {
+        
+    
         NavigationView {
             
             VStack {
                 Text("Welcome to Our App")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding()
-                
-                NavigationLink(destination: AchievementBarView(progress: $progress)) {
-                    Text("Tutorial")
-                    Text("Go to Detail View")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(40)
-                    
-                    
-                   
-                }
-                
+                                  .font(.largeTitle)
+                                  .fontWeight(.bold)
+                                  .padding()
+                              
+                              NavigationLink(destination: AchievementBarView(progress: $progress)) {
+                                  Text("Go Achievements")
+                                      .font(.title2)
+                                      .fontWeight(.semibold)
+                                      .foregroundColor(.white)
+                                      .padding()
+                                      .background(Color.blue)
+                                      .cornerRadius(40)
+                              }
+                              
+                              NavigationLink(destination: BankAccountView(balance: $balance)) {
+                                  Text("Bank Balance")
+                                      .font(.title2)
+                                      .fontWeight(.semibold)
+                                      .foregroundColor(.white)
+                                      .padding()
+                                      .background(Color.blue)
+                                      .cornerRadius(40)
+                              }
+                              .padding()
+                              
+                              Spacer()
+                          }
+                          .navigationBarTitle("Home", displayMode: .inline)
+                      }
+                  }
+              }
                 // VStack{
                 // homeHeader
                 //HomeStatView(showPortfolio: $showPortfolio)
@@ -88,7 +103,7 @@ struct ContentView: View {
                 
                 
                 
-            }
-        }
-    }
-}
+            
+        
+    
+

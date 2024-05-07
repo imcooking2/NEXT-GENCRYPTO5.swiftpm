@@ -18,7 +18,7 @@ struct LaunchPad: View {
     
     @State private var counter: Int = 0
     
-
+    
     var body: some View{
         ZStack{
             if showLoadingText{
@@ -27,16 +27,18 @@ struct LaunchPad: View {
                         .font(.headline)
                         .fontWeight(.heavy)
                         .foregroundColor(.green)
-                        
+                    
                 }
-                
+                .transition(AnyTransition.scale.animation(.easeIn))
             }
-                
-
-                            
+            
+            
+            
+             
+            
         }
-        
-        .transition(AnyTransition.scale.animation(.easeIn))
-        
+        .onAppear{
+            showLoadingText.toggle()
+        }
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BankAccountView: View {
-    @State  var balance: Double = 0.00
+    @Binding var balance: Double
     
     var body: some View {
         VStack {
@@ -21,4 +21,3 @@ struct BankAccountView: View {
         }
     }
 }
-

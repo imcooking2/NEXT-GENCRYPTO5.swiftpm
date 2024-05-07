@@ -7,7 +7,15 @@
 
 import SwiftUI
 
-
-
+struct AmountView: View{
+    
+    var body: some View{
+        
+        Text("Amount Here")
+            .bold()
+            .font(.title)
+            .padding(2)
+    }
+}
        
    
