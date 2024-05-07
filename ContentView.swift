@@ -48,56 +48,17 @@ struct ContentView: View {
                       }
                   }
               }
-                // VStack{
-                // homeHeader
-                //HomeStatView(showPortfolio: $showPortfolio)
-                //SearchBarView(searchText: $vm.searchText) columnTitles
-                
-                //if !showPortfolio {
-                //  allCoinsList
-                //    .transition(move(edge: .leading))
-                
-                //}
-                //if showPortfolio {
-                //  ZStack(alignment: .top){
-                //    if vm.portoflioCoins.isEmpty && vm.searchText.isEmpty {
-                //      portfolioEmptyText{
-                
-                //    } else {
-                // portfolioCoinsList
-                //  }
-                // }
-                //   .transition(.move(edge: .trailing))
-                // }
-                //Spacer(minLength: 0)
-                //}
-                //  .sheet(isPresented: $showSettingView, content: {
-                //    SettingView()
-                // })
-                
-                // }
-                //.padding()
-                
-                //Spacer()
-                
-                //}
+               
                 
                 
-                //     }
-                //.background(
-                //         .navigationBarTitle("Home", displayMode: .inline))
-                
-                // VStack {
-                
-                //}
-                //.navigationBarTitle("Home",displayMode: .inline)
-                //     }
-                //}
-                
-                
-                
-                
-                
+struct ContentView_Previews: PreviewProvider{
+    static var previews: some View{
+        NavigationView{
+            HeaderView()
+                .navigationBarHidden(true)
+        }
+    }
+}
                 
                 
                 

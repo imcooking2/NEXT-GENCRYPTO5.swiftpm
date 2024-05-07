@@ -23,7 +23,7 @@ struct HeaderView: View {
             VStack{
                 HStack{
                     CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-                        .background(CircleButtonAnimatioView(animate: $showPortfolio))
+                        .background(CircleButtonAnimationView(animate: $showPortfolio))
                         .onTapGesture{
                             if showPortfolio{
                                 showPortfolioView.toggle()
@@ -35,6 +35,15 @@ struct HeaderView: View {
                    
                 }
             }
+        }
+    }
+}
+
+struct HeaderView_Previews: PreviewProvider{
+    static var previews: some View{
+        NavigationView{
+            HeaderView()
+                .navigationBarHidden(true)
         }
     }
 }
