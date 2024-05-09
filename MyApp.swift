@@ -6,7 +6,7 @@ struct MyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            //ContentView(progress: $progress)
+            ContentView(progress: $progress)
 //            CircleButtonView(iconName: "info")
          
         }
