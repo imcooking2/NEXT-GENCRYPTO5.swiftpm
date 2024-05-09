@@ -15,7 +15,14 @@ struct BankBalance: View {
                 Spacer()
                 Image("")// logo
             }
+            
+           
             Text("Balance")
+                .overlay(
+                
+                RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(.green)
+                )
             HStack{
                 Text("USD")
                 Text("$AMOUNT")
