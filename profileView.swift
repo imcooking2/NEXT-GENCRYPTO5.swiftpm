@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @State var username: String = "Username"
+    @AppStorage("username") var username: String = "Username"
     
     var body: some View {
         VStack {
