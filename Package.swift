@@ -17,6 +17,7 @@ let package = Package(
             name: "NEXT˝GENCRYPTO5",
             targets: ["AppModule"],
             bundleIdentifier: "org.jhhs.624496.NEXT-GENCRYPTO5",
+            teamIdentifier: "LAFU7YQUW5",
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .checkmark),

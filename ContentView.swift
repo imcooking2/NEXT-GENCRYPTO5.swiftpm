@@ -65,7 +65,11 @@ struct ContentView: View {
                               Spacer()
                           }
                           .navigationBarTitle("Home", displayMode: .inline)
+                          .background(
+                                  LinearGradient(gradient: Gradient(colors: [.green, .purple, .blue]), startPoint: .top, endPoint: .bottom)
+                              )
                       }
+      
         
         Divider()
         // topmovers item view

@@ -54,7 +54,10 @@ struct CoinRowView: View{
         }
         .padding(.horizontal)
         .padding(.vertical, 4)
+        
+        .navigationTitle("Top Viewers")
     }
+       
 }
 
 
