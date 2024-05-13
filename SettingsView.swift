@@ -7,9 +7,40 @@
 
 import SwiftUI
 
-struct SettingsView: View {
-    var body: some View {
-        RoundedRectangle(cornerRadius: 10)
+struct SettingsView: View{
+    
+    let defaultURL = URL(string: "https://www.google.com")
+    let youtubeURL = URL(string: "https://www.youtube.com")
+    let jhhsWebsiteURL = URL(string: "https://www.d214.org/jhhs")
+    let coingeckoURL = URL(string: "https://www.coingecko.com")
+    
+    
+    var body: some View{
+        NavigationView {
+            
+            VStack {
+                
+                NavigationLink(destination: ProfileView()) {
+                    Text("Profile")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(40)
+                }
+                
+                    .font(.headline)
+                    .accentColor(.green)
+                    .listStyle(GroupedListStyle())
+                    .navigationTitle("Settings")
+                    .toolbar{
+                        ToolbarItem(placement: .navigationBarLeading){
+                            
+                        }
+                    }
+            }
+            
+        }
     }
 }
-
