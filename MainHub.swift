@@ -9,3 +9,25 @@
 import SwiftUI
 
 
+import SwiftUI
+import Charts
+struct MainHub: View{
+    var body: some View{
+        NavigationView{
+            NavigationStack{
+                VStack(alignment: .trailing){
+                    
+                   Text("test")
+                    
+                    
+                }
+                
+                .navigationTitle("Welcome!")
+                
+                
+            }
+        }
+        
+    }
+}
+

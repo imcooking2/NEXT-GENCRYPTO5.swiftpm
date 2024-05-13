@@ -20,6 +20,8 @@ struct ContentView: View {
                                   .font(.largeTitle)
                                   .fontWeight(.bold)
                                   .padding()
+                
+               
                               
                               NavigationLink(destination: AchievementBarView(progress: $progress)) {
                                   Text("Go Achievements")
@@ -39,6 +41,8 @@ struct ContentView: View {
                                       .padding()
                                       .background(Color.blue)
                                       .cornerRadius(40)
+                                  
+                                 
                               }
                 
                     NavigationLink(destination: SettingsView()) {
@@ -56,25 +60,14 @@ struct ContentView: View {
                           }
                           .navigationBarTitle("Home", displayMode: .inline)
                       }
+        
+        Divider()
+        // topmovers item view
+        
+        TopMoversItemView()
                   }
               }
                
                 
-                
-struct ContentView_Previews: PreviewProvider{
-    static var previews: some View{
-        NavigationView{
-            HeaderView()
-                .navigationBarHidden(true)
-        }
-    }
-}
-                
-                
-                
-                
-                
-            
-        
-    
+
 
