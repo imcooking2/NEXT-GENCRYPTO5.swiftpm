@@ -8,6 +8,9 @@ struct ContentView: View {
     @State private var showPortfolioView: Bool = false // generate a new sheet
     @State private var showSettingView: Bool = false // pop up the setting view
     
+    //gradient on/off
+    @State private var animateGradient = false
+    
     // @State private var selectedCoin: CoinModel? = nil
     @State private var showDetailView: Bool = false
     var body: some View {
@@ -90,7 +93,15 @@ struct ContentView: View {
                               }
                           }
                           .background(
-                                  LinearGradient(gradient: Gradient(colors: [.green, .purple, .blue]), startPoint: .top, endPoint: .bottom)
+                                  
+                           
+                            LinearGradient(colors: [.green, .purple], startPoint: animateGradient ? .topLeading : .bottomLeading, endPoint: animateGradient ? .bottomTrailing : .topTrailing)
+                                .ignoresSafeArea()
+                                .onAppear {
+                                    withAnimation(.linear(duration: 2.0).repeatForever(autoreverses: true)) {
+                                        animateGradient.toggle()
+                                    }
+                                }
                               )
                       }
       
