@@ -22,11 +22,7 @@ struct TopMoversView: View{
                 }
             }
         }
-            // coin percent change
-            
-            Text("+ 5.60%")
-                .font(.title2)
-                .foregroundColor(.green)
+        .padding()
             
         }
        

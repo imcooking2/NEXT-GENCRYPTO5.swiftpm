@@ -16,10 +16,16 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
+                
+                
                 Text("Welcome to Our App")
                                   .font(.largeTitle)
                                   .fontWeight(.bold)
                                   .padding()
+                
+                //topmoversview
+                
+                TopMoversView()
                 
                
                               
