@@ -40,6 +40,16 @@ struct ContentView: View {
                                       .background(Color.blue)
                                       .cornerRadius(40)
                               }
+                
+                    NavigationLink(destination: SettingsView()) {
+                    Text("Setting")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(40)
+                }
                               .padding()
                               
                               Spacer()

@@ -16,17 +16,31 @@ struct SettingsView: View{
     
     
     var body: some View{
-        
-        Text("Setting Page")
-        .font(.headline)
-        .accentColor(.green)
-        .listStyle(GroupedListStyle())
-        .navigationTitle("Settings")
-        .toolbar{
-            ToolbarItem(placement: .navigationBarLeading){
-               
+        NavigationView {
+            
+            VStack {
+                
+                NavigationLink(destination: ProfileView()) {
+                    Text("Profile")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(40)
+                }
+                
+                    .font(.headline)
+                    .accentColor(.green)
+                    .listStyle(GroupedListStyle())
+                    .navigationTitle("Settings")
+                    .toolbar{
+                        ToolbarItem(placement: .navigationBarLeading){
+                            
+                        }
+                    }
             }
+            
         }
     }
-    
 }
