@@ -70,7 +70,7 @@ struct ContentView: View {
         Divider()
         // topmovers item view
         
-        TopMoversItemView()
+        CoinRowView()
                   }
               }
                
