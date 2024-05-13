@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
 
 struct TopMoversItemView: View{
     var body: some View{

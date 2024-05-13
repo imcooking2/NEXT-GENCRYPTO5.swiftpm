@@ -16,10 +16,16 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
+                
+                
                 Text("Welcome to Our App")
                                   .font(.largeTitle)
                                   .fontWeight(.bold)
                                   .padding()
+                
+                //topmoversview
+                
+                TopMoversView()
                 
                
                               
@@ -44,6 +50,16 @@ struct ContentView: View {
                                   
                                  
                               }
+                
+                    NavigationLink(destination: SettingsView()) {
+                    Text("Setting")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(40)
+                }
                               .padding()
                               
                               Spacer()
