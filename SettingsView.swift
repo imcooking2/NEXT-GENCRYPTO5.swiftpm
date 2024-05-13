@@ -16,20 +16,38 @@ struct SettingsView: View{
     
     
     var body: some View{
-        NavigationView {
+        
+        VStack {
             
-            VStack {
+            NavigationLink(destination: MainHub()) {
+                Text("MainHub")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(40)
                 
-                NavigationLink(destination: ProfileView()) {
-                    Text("Profile")
+                
+                NavigationLink(destination: BankBalance()) {
+                    Text("BankBalance")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .padding()
                         .background(Color.blue)
                         .cornerRadius(40)
-                }
-                
+                    
+                    NavigationLink(destination: ProfileView()) {
+                        Text("Profile")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.blue)
+                            .cornerRadius(40)
+                    }
+                    
                     .font(.headline)
                     .accentColor(.green)
                     .listStyle(GroupedListStyle())
@@ -39,8 +57,9 @@ struct SettingsView: View{
                             
                         }
                     }
+                }
+                
             }
-            
         }
     }
 }
