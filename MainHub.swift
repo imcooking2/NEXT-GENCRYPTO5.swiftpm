@@ -17,8 +17,12 @@ struct MainHub: View{
             NavigationStack{
                 VStack(alignment: .trailing){
                     
+                   Text("test")
+                    
                     
                 }
+                
+                .navigationTitle("Welcome!")
                 
                 
             }
