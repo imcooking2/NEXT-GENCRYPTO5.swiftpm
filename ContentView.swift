@@ -72,7 +72,23 @@ struct ContentView: View {
                               
                               Spacer()
                           }
-                          .navigationBarTitle("Home", displayMode: .inline)
+                          .navigationBarTitle("", displayMode: .inline)
+                          .toolbar{
+                              ToolbarItem(placement: .topBarTrailing){
+                                  HStack{
+                                      Text("Home")
+                                          .font(.headline)
+                                          .foregroundColor(.white)
+                                      Text("Policy    ")
+                                          .font(.headline)
+                                          .foregroundColor(.white)
+                                      Text("Risks")
+                                          .font(.headline)
+                                          .foregroundColor(.white)
+                                      Divider()
+                                  }
+                              }
+                          }
                           .background(
                                   LinearGradient(gradient: Gradient(colors: [.green, .purple, .blue]), startPoint: .top, endPoint: .bottom)
                               )
