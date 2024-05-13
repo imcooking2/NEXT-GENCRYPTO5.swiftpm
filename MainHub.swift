@@ -17,12 +17,12 @@ struct MainHub: View{
             NavigationStack{
                 VStack(alignment: .trailing){
                     
-                   Text("test")
+                   Text("Home")
                     
                     
                 }
                 
-                .navigationTitle("Welcome!")
+                .navigationTitle("MainHub")
                 
                 
             }

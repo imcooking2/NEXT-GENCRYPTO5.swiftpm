@@ -27,7 +27,15 @@ struct ContentView: View {
                 
                 TopMoversView()
                 
-               
+                NavigationLink(destination: MainHub()) {
+                    Text("MainHub")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(40)
+                }
                               
                               NavigationLink(destination: AchievementBarView(progress: $progress)) {
                                   Text("Go Achievements")
