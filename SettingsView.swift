@@ -17,7 +17,7 @@ struct SettingsView: View{
     
     var body: some View{
         
-        VStack {
+        HStack {
             
             NavigationLink(destination: MainHub()) {
                 Text("MainHub")
@@ -40,7 +40,7 @@ struct SettingsView: View{
                     
                     
                     NavigationLink(destination: CalculationsPage()) {
-                        Text("CalculationsPage")
+                        Text("CalcPage")
                             .font(.title2)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)

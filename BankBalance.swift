@@ -11,10 +11,12 @@ struct BankBalance: View {
     
     var body: some View {
         VStack(alignment: .leading){
-            HStack{
-                Spacer()
-                Image("")// logo
+            Text("Hello")
+            VStack{
+                
             }
+        }
+            
             
            
             Text("Balance")
@@ -33,6 +35,11 @@ struct BankBalance: View {
             .cornerRadius(20)
         }
     }
+
+
+
+struct BankBalance_Previews:PreviewProvider{
+    static var previews:some View{
+        BankBalance()
+    }
 }
-
-
