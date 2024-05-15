@@ -5,4 +5,9 @@
 //  Created by Kevin Kishore on 5/3/24.
 //
 
-import Foundation
+import SwiftUI
+
+struct CryptoItem: Hashable {
+    var name: String
+    var amount: Int
+}
