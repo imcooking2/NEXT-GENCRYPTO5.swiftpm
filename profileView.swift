@@ -10,6 +10,8 @@ import SwiftUI
 struct ProfileView: View {
     @AppStorage("username") var username: String = "Username"
     
+    @State var showActionSheet = true
+    
     var body: some View {
         VStack {
             ZStack {
@@ -21,12 +23,27 @@ struct ProfileView: View {
                     .strokeBorder(Color.blue, lineWidth: 4)
                     .frame(width: 110, height: 110)
                 
-                Image("profile_picture")
-                    .resizable()
-                    .scaledToFill()
-                    .clipShape(Circle())
-                    .frame(width: 100, height: 100)
-                    .clipped()
+                Button(action: {
+                    self.showActionSheet = true
+                }) {
+                    Image("profile_picture")
+                        .resizable()
+                        .scaledToFill()
+                        .clipShape(Circle())
+                        .frame(width: 100, height: 100)
+                        .clipped()
+                }
+                .actionSheet(isPresented: $showActionSheet) {
+                    ActionSheet(title: Text("Change Profile Picture"), message: Text("Select a new picture"), buttons: [
+                        .default(Text("Choose From Library"), action: {
+                           
+                        }),
+                        .default(Text("Take Photo"), action: {
+                            
+                        }),
+                        .cancel()
+                    ])
+                }
             }
             TextField("Username", text: $username)
                 .font(.title)
