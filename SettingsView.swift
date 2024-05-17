@@ -16,8 +16,7 @@ struct SettingsView: View{
     
     
     var body: some View{
-        
-        HStack {
+        VStack{
             
             NavigationLink(destination: MainHub()) {
                 Text("MainHub")
@@ -60,21 +59,32 @@ struct SettingsView: View{
                                 .padding()
                                 .background(Color.blue)
                                 .cornerRadius(40)
-                        }
-                        
-                        .font(.headline)
-                        .accentColor(.green)
-                        .listStyle(GroupedListStyle())
-                        .navigationTitle("Settings")
-                        .toolbar{
-                            ToolbarItem(placement: .navigationBarLeading){
-                                
+                            
+                            NavigationLink(destination: ProfileView()) {
+                                Text("Profile")
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .cornerRadius(40)
+                            }
+                            
+                            .font(.headline)
+                            .accentColor(.green)
+                            .listStyle(GroupedListStyle())
+                            .navigationTitle("Settings")
+                            .toolbar{
+                                ToolbarItem(placement: .navigationBarLeading){
+                                    
+                                }
                             }
                         }
+                        
                     }
-                    
                 }
             }
         }
     }
+    
 

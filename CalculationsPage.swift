@@ -10,7 +10,7 @@ struct CalculationsPage: View {
     @State private var result: Double = 0.0
     
     var body: some View {
-        ZStack {
+        HStack {
             Color(result <= 100 ? .green : .red)
                 .edgesIgnoringSafeArea(.all)
             VStack {

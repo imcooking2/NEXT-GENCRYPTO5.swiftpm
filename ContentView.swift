@@ -26,7 +26,7 @@ struct ContentView: View {
                                   .fontWeight(.bold)
                                   .padding()
                 
-                //topmoversview
+               
                 
                 TopMoversView()
                 
@@ -107,7 +107,7 @@ struct ContentView: View {
       
         
         Divider()
-        // topmovers item view
+        
         
         CoinRowView()
                   }

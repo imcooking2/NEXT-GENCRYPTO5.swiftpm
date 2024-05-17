@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @AppStorage("username") var username: String = "Username"
+    @AppStorage("bio") var bio: String = "Bio"
     
     @State var showActionSheet = true
     
@@ -36,7 +37,7 @@ struct ProfileView: View {
                 .actionSheet(isPresented: $showActionSheet) {
                     ActionSheet(title: Text("Change Profile Picture"), message: Text("Select a new picture"), buttons: [
                         .default(Text("Choose From Library"), action: {
-                           
+                            
                         }),
                         .default(Text("Take Photo"), action: {
                             
@@ -52,10 +53,15 @@ struct ProfileView: View {
                 .background(Color.white)
                 .cornerRadius(10)
                 .padding(.horizontal)
+            
+            TextField("Enter Bio", text: $bio)
+                .font(.body)
+               .fontWeight(.bold)
+                .padding()
+               .background(Color.white)
+                .cornerRadius(10)
+                .padding(.horizontal)
         }
         .padding()
     }
 }
-
-
-
