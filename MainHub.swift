@@ -13,7 +13,7 @@ import SwiftUI
 struct MainHub: View {
     var body: some View {
         VStack{
-            Text("Welcome to MainHub")
+            Text("Welcome to Main Hub")
                 .font(.title)
                 .fontWeight(.bold)
             Spacer()
