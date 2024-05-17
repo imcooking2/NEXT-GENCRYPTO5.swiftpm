@@ -11,8 +11,12 @@ struct ProfileView: View {
     @AppStorage("username") var username: String = "Username"
     @AppStorage("bio") var bio: String = "Bio"
     
+    let defaultUsername = "Username"
+    let defaultBio = "Bio"
+    
     @State var showActionSheet = true
     
+
     var body: some View {
         VStack {
             ZStack {
@@ -61,7 +65,21 @@ struct ProfileView: View {
                .background(Color.white)
                 .cornerRadius(10)
                 .padding(.horizontal)
-        }
-        .padding()
-    }
-}
+            
+            Button(action: {
+                     self.username = defaultUsername
+                     self.bio = defaultBio
+                 }) {
+                     Text("Reset")
+                         .font(.title)
+                         .fontWeight(.bold)
+                         .padding()
+                         .background(Color.blue)
+                         .foregroundColor(.white)
+                         .cornerRadius(10)
+                         .padding(.horizontal)
+                 }
+             }
+             .padding()
+         }
+     }
