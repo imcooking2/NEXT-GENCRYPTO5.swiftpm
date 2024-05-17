@@ -16,8 +16,7 @@ struct SettingsView: View{
     
     
     var body: some View{
-        
-        HStack {
+        VStack{
             
             NavigationLink(destination: MainHub()) {
                 Text("MainHub")
@@ -28,19 +27,9 @@ struct SettingsView: View{
                     .background(Color.blue)
                     .cornerRadius(40)
                 
-                
-                NavigationLink(destination: BankBalance()) {
-                    Text("BankBalance")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(40)
-                    
-                    
-                    NavigationLink(destination: CalculationsPage()) {
-                        Text("CalcPage")
+               
+                    NavigationLink(destination: BankBalance()) {
+                        Text("BankBalance")
                             .font(.title2)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -48,29 +37,41 @@ struct SettingsView: View{
                             .background(Color.blue)
                             .cornerRadius(40)
                         
-                        NavigationLink(destination: ProfileView()) {
-                            Text("Profile")
+                        
+                        NavigationLink(destination: CalculationsPage()) {
+                            Text("CalcPage")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(Color.blue)
                                 .cornerRadius(40)
-                        }
-                        
-                        .font(.headline)
-                        .accentColor(.green)
-                        .listStyle(GroupedListStyle())
-                        .navigationTitle("Settings")
-                        .toolbar{
-                            ToolbarItem(placement: .navigationBarLeading){
-                                
+                            
+                            NavigationLink(destination: ProfileView()) {
+                                Text("Profile")
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .cornerRadius(40)
+                            }
+                            
+                            .font(.headline)
+                            .accentColor(.green)
+                            .listStyle(GroupedListStyle())
+                            .navigationTitle("Settings")
+                            .toolbar{
+                                ToolbarItem(placement: .navigationBarLeading){
+                                    
+                                }
                             }
                         }
+                        
                     }
-                    
                 }
             }
         }
     }
-}
+    
+
