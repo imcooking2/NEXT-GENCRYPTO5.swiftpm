@@ -28,9 +28,12 @@ struct SettingsView: View{
                     .background(Color.blue)
                     .cornerRadius(40)
                 
+            }
+            
+            VStack{
                 
                 NavigationLink(destination: BankBalance()) {
-                    Text("BankBalance")
+                    Text("Bank")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
@@ -40,16 +43,17 @@ struct SettingsView: View{
                     
                     
                     NavigationLink(destination: CalculationsPage()) {
-                        Text("CalcPage")
+                        Text("Calc")
                             .font(.title2)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
                             .padding()
                             .background(Color.blue)
                             .cornerRadius(40)
-                        
+                    }
+                    
                         NavigationLink(destination: ProfileView()) {
-                            Text("Profile")
+                            Text("User")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .foregroundColor(.white)
@@ -73,4 +77,4 @@ struct SettingsView: View{
             }
         }
     }
-}
+
