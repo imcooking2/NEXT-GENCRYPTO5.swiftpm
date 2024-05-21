@@ -12,9 +12,9 @@ struct MainHubContentView: View {
     [CryptoItem(name: "Ethereum",amount: 5), CryptoItem(name: "Dodgecoin", amount: 2)]
     
     var body: some View {
-        HeaderView(Cryptos: $Cryptos)
+        HeaderView2(Cryptos: $Cryptos)
         List(Cryptos, id: \.self){ moderncrypto in
-            ListView(moderncrypto: moderncrypto)
+            ListView2(moderncrypto: moderncrypto)
             
         }
     }
