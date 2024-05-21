@@ -51,15 +51,7 @@ struct SettingsView: View{
                             .cornerRadius(40)
                     }
                     
-                        NavigationLink(destination: ProfileView()) {
-                            Text("User")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.blue)
-                                .cornerRadius(40)
-                            
+                       
                             NavigationLink(destination: ProfileView()) {
                                 Text("Profile")
                                     .font(.title2)
@@ -85,6 +77,6 @@ struct SettingsView: View{
                 }
             }
         }
-    }
+    
     
 
