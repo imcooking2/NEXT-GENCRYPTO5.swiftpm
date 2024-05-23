@@ -11,15 +11,16 @@
 import SwiftUI
 
 struct MainHub: View {
+    @State var Cryptos : [CryptoItem2] =
+    [CryptoItem2(name: "Ethereum",amount: 5), CryptoItem2(name: "Dodgecoin", amount: 2)]
+    
     var body: some View {
-        VStack{
-            Text("Welcome to Main Hub")
-                .font(.title)
-                .fontWeight(.bold)
-            Spacer()
-            Text("Still in Progress")
-            //Still in progress
+        HeaderView2(Cryptos: $Cryptos)
+        List(Cryptos, id: \.self){ moderncrypto in
+            ListView2(moderncrypto: moderncrypto)
+            
         }
     }
 }
+
 
