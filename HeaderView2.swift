@@ -11,7 +11,7 @@ struct HeaderView2: View {
     
     @State var NewCryptoName: String = ""
     @State var newamount: Int?
-    @Binding var Cryptos: [CryptoItem]
+    @Binding var Cryptos: [CryptoItem2]
     
     
     var body: some View {
@@ -20,7 +20,7 @@ struct HeaderView2: View {
             TextField("CryptoStock", text: $NewCryptoName)
             Button("+"){
                 guard let number = newamount else {return}
-                let newcryptoItem = CryptoItem(name: NewCryptoName, amount:number)
+                let newcryptoItem = CryptoItem2(name: NewCryptoName, amount:number)
                 Cryptos.append(newcryptoItem)
                 NewCryptoName = ""
                 newamount = nil

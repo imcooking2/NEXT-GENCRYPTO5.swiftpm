@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ListView2: View {
     
-    let moderncrypto: CryptoItem
+    let moderncrypto: CryptoItem2
     
     var body: some View {
             
