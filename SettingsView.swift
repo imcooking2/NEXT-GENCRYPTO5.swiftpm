@@ -39,7 +39,18 @@ struct SettingsView: View{
                         .padding()
                         .background(Color.blue)
                         .cornerRadius(40)
+                }
                     
+                    NavigationLink(destination: passkey()) {
+                        Text("Passkey")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.blue)
+                            .cornerRadius(40)
+                    }
+
                     
                     NavigationLink(destination: CalculationsPage()) {
                         Text("Calc")
@@ -50,8 +61,7 @@ struct SettingsView: View{
                             .background(Color.blue)
                             .cornerRadius(40)
                     }
-                    
-                       
+                                           
                             NavigationLink(destination: ProfileView()) {
                                 Text("Profile")
                                     .font(.title2)
@@ -76,7 +86,7 @@ struct SettingsView: View{
                     }
                 }
             }
-        }
+        
     
     
 

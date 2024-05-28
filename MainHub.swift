@@ -13,6 +13,7 @@ import SwiftUI
 struct MainHub: View {
     @State var Cryptos : [CryptoItem2] =
     [CryptoItem2(name: "Ethereum",amount: 5), CryptoItem2(name: "Dodgecoin", amount: 2)]
+        
     
     var body: some View {
         HeaderView2(Cryptos: $Cryptos)
