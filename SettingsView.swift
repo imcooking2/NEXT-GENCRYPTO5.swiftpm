@@ -16,18 +16,7 @@ struct SettingsView: View{
     
     
     var body: some View{
-        VStack{
-            
-            NavigationLink(destination: MainHub()) {
-                Text("MainHub")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(40)
-                
-            }
+        
             
             VStack{
                 
@@ -85,7 +74,7 @@ struct SettingsView: View{
                         
                     }
                 }
-            }
+            
         
     
     
