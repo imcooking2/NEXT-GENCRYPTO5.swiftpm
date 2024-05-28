@@ -15,7 +15,7 @@ struct passkey: View{
         @State var showAlert = false
         
         var body: some View {
-            Text("Type The PassKey to access crypto")
+            Text("Type The Pass Key")
             Spacer ()
             HStack {
                 ForEach(0..<lettersInWord.count,id:\.self) { index in
@@ -36,12 +36,13 @@ struct passkey: View{
                 }
             }
             
-            Button ("Continue"){
+            Button ("Hint: type HENSONFIRESK"){
                 showAlert.toggle()
             }
+           
                         
                         NavigationLink(destination: MainHub()){
-                            Text("Passkey")
+                            Text("MainHub")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .foregroundColor(.white)
@@ -49,11 +50,11 @@ struct passkey: View{
                                 .background(Color.blue)
                                 .cornerRadius(40)
                         }
-
+                        
                         
                     }
                 }
+                
+                
             
-        
-        
     
