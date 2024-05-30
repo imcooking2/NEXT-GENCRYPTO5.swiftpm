@@ -50,8 +50,19 @@ struct SettingsView: View{
                             .background(Color.blue)
                             .cornerRadius(40)
                     }
-                                           
-                            NavigationLink(destination: ProfileView()) {
+                                      
+                
+                NavigationLink(destination: InfoPage()) {
+                    Text("IntroPage")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(40)
+                }
+                
+                    NavigationLink(destination: ProfileView()) {
                                 Text("Profile")
                                     .font(.title2)
                                     .fontWeight(.semibold)
